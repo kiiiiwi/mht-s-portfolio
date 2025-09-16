@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 
 export function HeadlineEmoji({
-  src = "/images/emoji.webm",
+  src = "/images/emoji.gif",
   size = 72,
   className,
 }: {
@@ -18,17 +18,13 @@ export function HeadlineEmoji({
   }, [src]);
 
   return (
-    <video
+    <img
       key={stampedSrc}
       src={stampedSrc}
       width={size}
       height={size}
       className={className}
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
+      alt="Emoji"
     />
   );
 }

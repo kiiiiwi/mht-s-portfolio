@@ -7,7 +7,7 @@ const person: Person = {
   lastName: "Yu",
   name: `Selene Yu`,
   role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/mht.jpg",
   email: "example@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
@@ -83,7 +83,7 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
+  title: "About - 关于我",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
