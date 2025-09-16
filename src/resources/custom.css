@@ -52,3 +52,66 @@
   --scheme-neutral-600-50: rgba(137,152,159,0.5);
   /*
 }*/
+
+/* Prefer PingFang for Chinese text across the site */
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "PingFang SC", "PingFang", "Hiragino Sans GB", "Heiti SC",
+    "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC",
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Keep monospace for code-related elements */
+code,
+pre,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace !important;
+}
+
+/* Home tags styles */
+.home-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  /* 增大半个单位左右 */
+  border-radius: 999px;
+  border: 1px solid var(--neutral-alpha-medium);
+  background: color-mix(in oklab, var(--brand-alpha-weak), transparent 35%);
+  /* 减淡背景 */
+  color: var(--neutral-on-background-weak);
+  text-decoration: none;
+  font-size: 1rem;
+  /* 与下方按钮字号一致 */
+  line-height: 1;
+  transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.home-tag:hover {
+  transform: translateY(-1px);
+  background: color-mix(in oklab, var(--brand-alpha-medium), transparent 20%);
+  border-color: var(--brand-alpha-strong);
+  box-shadow: 0 4px 12px var(--brand-alpha-weak);
+  color: var(--neutral-on-background-weak);
+}
+
+.home-tag:active {
+  transform: translateY(0);
+}
+
+/* Headline emoji before the title */
+.headline-emoji {
+  display: block;
+  width: 216px;
+  /* 放大 3 倍 */
+  height: 216px;
+  /* 放大 3 倍 */
+  margin: 0 auto 16px auto;
+  /* 适当加大与标题的间距 */
+  border-radius: 12px;
+}

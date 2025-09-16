@@ -1,5 +1,6 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Logo, Row, Text } from "@once-ui-system/core";
+import { Line, Row, Text } from "@once-ui-system/core";
+import { HeadlineEmoji } from "@/components/HeadlineEmoji";
 
 const person: Person = {
   firstName: "Selene",
@@ -49,9 +50,14 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: (
+    <>
+      <HeadlineEmoji size={216} className="headline-emoji" />
+      你好！我是马慧韬
+    </>
+  ),
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -64,17 +70,14 @@ const home: Home = {
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
-    <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
-    </>
+    <>欢迎来到我的个人网站，我将在这里展示我的个人作品，探索兴趣爱好，记录生活瞬间。</>
   ),
+  tags: [
+    { label: "# GIS" },
+    { label: "# 设计" },
+    { label: "# UI/UX" },
+    { label: "# Vibe Coding" },
+  ],
 };
 
 const about: About = {
@@ -223,7 +226,7 @@ const about: About = {
             height: 9,
           },
         ],
-      },  
+      },
     ],
   },
 };

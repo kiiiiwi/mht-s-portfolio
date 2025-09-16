@@ -28,7 +28,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="xl" paddingY="12" horizontal="center">
+    <Column maxWidth="m" gap="xl" paddingY="24" horizontal="center" style={{ minHeight: "100vh" }}>
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -42,7 +42,7 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column fillWidth horizontal="center" gap="m">
+      <Column fillWidth horizontal="center" gap="xl" style={{ flex: 1, justifyContent: "center" }}>
         <Column maxWidth="s" horizontal="center" align="center">
           {home.featured.display && (
             <RevealFx
@@ -65,17 +65,34 @@ export default function Home() {
               </Badge>
             </RevealFx>
           )}
-          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
+          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="24">
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}
             </Heading>
           </RevealFx>
-          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="32">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="40">
+            <Text wrap="nowrap" onBackground="neutral-weak" variant="body-default-l" style={{ whiteSpace: "nowrap" }}>
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
+          {home.tags && home.tags.length > 0 && (
+            <RevealFx translateY="8" delay={0.25} fillWidth horizontal="center" paddingBottom="32">
+              <Row gap="16" paddingTop="4">
+                {home.tags.map((tag, idx) => (
+                  tag.href ? (
+                    <a key={idx} href={tag.href} className="home-tag">
+                      {tag.label}
+                    </a>
+                  ) : (
+                    <span key={idx} className="home-tag">
+                      {tag.label}
+                    </span>
+                  )
+                ))}
+              </Row>
+            </RevealFx>
+          )}
+          <RevealFx paddingTop="24" delay={0.4} horizontal="center" paddingLeft="12">
             <Button
               id="about"
               data-border="rounded"
