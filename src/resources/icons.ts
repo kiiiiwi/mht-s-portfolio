@@ -13,6 +13,7 @@ import {
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
   HiArrowUp,
+  HiPhone,
 } from "react-icons/hi2";
 
 import {
@@ -37,6 +38,7 @@ export const iconLibrary: Record<string, IconType> = {
   arrowRight: HiArrowRight,
   arrowUp: HiArrowUp,
   email: HiEnvelope,
+  phone: HiPhone,
   globe: HiOutlineGlobeAsiaAustralia,
   person: PiUserCircleDuotone,
   grid: PiGridFourDuotone,

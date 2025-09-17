@@ -135,78 +135,76 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "教育经历",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "华东师范大学   研究生在读",
+        timeframe: "2023.9 - 至今",
+        description: <>测绘工程（专题地图设计与编制）</>,
+        achievements: [
+          <>获“华为杯”第二十届中国研究生数学建模竞赛二等奖</>,
+          <>连续两年获研究生学业奖学金</>,
+          <>获2023-2024学年华东师范大学地理科学学院优秀学生干部</>,
+        ],
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "华东师范大学   本科",
+        timeframe: "2018.9 - 2022.6",
+        description: <>地理信息科学</>,
+        achievements: [
+          <>曾获2019~2020、2021~2022学年华东师范大学优秀学生三等奖学金（前30%）</>,
+        ],
+      },
+    ],
+  },
+  campusExperience: {
+    display: true, // set to false to hide this section
+    title: "校园经历",
+    experiences: [
+      {
+        organization: "华东师范大学地理科学学院研究生会",
+        timeframe: "2024.6 - 2025.6",
+        role: "宣传部部长",
+        achievements: [
+          <>海报设计：利用Illustrator、Photoshop等工具设计学院元旦晚会、毕业典礼等大型活动的海报及易拉宝。</>,
+        ],
+      },
+      {
+        organization: "华东师范大学学生会",
+        timeframe: "2020.7 - 2022.7",
+        role: "新媒体中心负责人",
+        achievements: [
+          <>摄影宣传：参与并负责过校毕业晚会、校庆晚会、十大歌手等活动的后台拍摄宣传和统筹工作，并形成相关宣传推文和视频物料。</>,
+        ],
+      },
+      {
+        organization: "华东师范大学地理科学学院学生会",
+        timeframe: "2020.6 - 2021.6",
+        role: "媒体宣传中心部长",
+        achievements: [
+          <>公众号运营：任职期间为“华师地理”公众号主负责人之一，经手推送百余篇。</>,
+        ],
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "技能证书",
     skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+      { name: "Illustrator", icon: "illustrator" },
+      { name: "Photoshop", icon: "photoshop" },
+      { name: "Figma", icon: "figma" },
+      { name: "Blender", icon: "blender" },
+      { name: "Python", icon: "python" },
+      { name: "HTML5", icon: "html5" },
+      { name: "CSS3", icon: "css3" },
+      { name: "MySQL", icon: "mysql" },
+      { name: "ArcGIS", icon: "arcgis" },
+      { name: "QGIS", icon: "qgis" },
+      { name: "Axure", icon: "axure" },
+      { name: "Matlab", icon: "matlab" },
+      { name: "CorelDraw", icon: "coreldraw" },
+      { name: "JavaScript", icon: "javascript" },
     ],
   },
 };

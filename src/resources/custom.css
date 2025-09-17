@@ -115,3 +115,9 @@ samp {
   /* 适当加大与标题的间距 */
   border-radius: 12px;
 }
+
+/* Skill cards hover effect */
+.skill-card:hover {
+  border-color: #3b82f6 !important;
+  background-color: #f8fafc !important;
+}

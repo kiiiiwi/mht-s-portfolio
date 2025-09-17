@@ -1,11 +1,4 @@
 import { IconName } from "@/resources/icons";
-import { zones } from "tzdata";
-
-/**
- * IANA time zone string (e.g., 'Asia/Calcutta', 'Europe/Vienna').
- * See: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
- */
-export type IANATimeZone = Extract<keyof typeof zones, string>; // Narrow to string keys for React usage
 
 /**
  * Represents a person featured in the portfolio.
@@ -23,8 +16,8 @@ export type Person = {
   avatar: string;
   /** Email address */
   email: string;
-  /** IANA time zone location */
-  location: IANATimeZone;
+  /** Location display text */
+  location: string;
   /** Languages spoken */
   languages?: string[];
 };
@@ -178,8 +171,30 @@ export interface About extends BasePageConfig {
     institutions: Array<{
       /** Institution name */
       name: string;
+      /** Timeframe of studies */
+      timeframe: string;
       /** Description of studies */
       description: React.ReactNode;
+      /** Achievements during studies */
+      achievements: React.ReactNode[];
+    }>;
+  };
+  /** Campus experience section */
+  campusExperience: {
+    /** Whether to display campus experience section */
+    display: boolean;
+    /** Title for the campus experience section */
+    title: string;
+    /** List of campus experiences */
+    experiences: Array<{
+      /** Organization name */
+      organization: string;
+      /** Timeframe of experience */
+      timeframe: string;
+      /** Role or position */
+      role: string;
+      /** Achievements during the experience */
+      achievements: React.ReactNode[];
     }>;
   };
   /** Technical skills section */
@@ -190,26 +205,10 @@ export interface About extends BasePageConfig {
     title: string;
     /** List of technical skills */
     skills: Array<{
-      /** Skill title */
-      title: string;
-      /** Skill description */
-      description?: React.ReactNode;
-      /** Skill tags */
-      tags?: Array<{
-        name: string;
-        icon?: string;
-      }>;
-      /** Images related to the skill */
-      images?: Array<{
-        /** Image source path */
-        src: string;
-        /** Image alt text */
-        alt: string;
-        /** Image width ratio */
-        width: number;
-        /** Image height ratio */
-        height: number;
-      }>;
+      /** Skill name */
+      name: string;
+      /** Skill icon */
+      icon: string;
     }>;
   };
 }

@@ -142,7 +142,7 @@ export const Header = () => {
             gap="20"
           >
             <Flex s={{ hide: true }}>
-              {display.time && <TimeDisplay timeZone={person.location} />}
+              {display.time && <TimeDisplay timeZone="Asia/Shanghai" />}
             </Flex>
           </Flex>
         </Flex>
