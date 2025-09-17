@@ -352,10 +352,17 @@ export default function About() {
               >
                 {about.technical.title}
               </Heading>
+              <Text
+                variant="heading-strong-l"
+                marginBottom="m"
+                style={{ color: '#000000' }}
+              >
+                专业技能
+              </Text>
               <div style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(4, 1fr)',
-                gridTemplateRows: 'repeat(3, 1fr)',
+                gridTemplateRows: 'repeat(4, 1fr)',
                 gap: '20px',
                 marginBottom: '40px'
               }}>
@@ -363,6 +370,7 @@ export default function About() {
                   <div
                     key={`${skill.name}-${index}`}
                     className="skill-card"
+                    data-proficiency={skill.proficiency}
                     style={{
                       aspectRatio: '1',
                       border: '2px solid #e5e7eb',
@@ -376,8 +384,11 @@ export default function About() {
                       transition: 'all 0.2s ease',
                       cursor: 'pointer',
                       maxWidth: '120px',
-                      maxHeight: '120px'
-                    }}
+                      maxHeight: '120px',
+                      position: 'relative',
+                      overflow: 'hidden',
+                      '--proficiency': skill.proficiency
+                    } as React.CSSProperties}
                   >
                     <img
                       src={`/icons/${skill.icon}.svg`}
@@ -385,7 +396,9 @@ export default function About() {
                       style={{
                         width: '28px',
                         height: '28px',
-                        marginBottom: '6px'
+                        marginBottom: '6px',
+                        objectFit: 'contain',
+                        display: 'block'
                       }}
                     />
                     <span style={{
@@ -399,6 +412,29 @@ export default function About() {
                   </div>
                 ))}
               </div>
+
+              {about.technical.certificates.display && (
+                <>
+                  <Text
+                    variant="heading-strong-l"
+                    marginBottom="xs"
+                    style={{ color: '#000000' }}
+                  >
+                    {about.technical.certificates.title}
+                  </Text>
+                  <Column as="ul" gap="16" marginBottom="40">
+                    {about.technical.certificates.items.map((certificate, index) => (
+                      <Text
+                        as="li"
+                        variant="body-default-m"
+                        key={`certificate-${index}`}
+                      >
+                        {certificate.name}
+                      </Text>
+                    ))}
+                  </Column>
+                </>
+              )}
             </>
           )}
         </Column>

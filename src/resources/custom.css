@@ -121,3 +121,27 @@ samp {
   border-color: #3b82f6 !important;
   background-color: #f8fafc !important;
 }
+
+/* Skill proficiency fill effect */
+.skill-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  background-color: rgba(214, 248, 254, 0.8);
+  transition: height 0.3s ease;
+  z-index: 1;
+}
+
+.skill-card:hover::before {
+  height: calc(var(--proficiency, 0) * 1%);
+}
+
+/* Ensure content stays above the fill */
+.skill-card img,
+.skill-card span {
+  position: relative;
+  z-index: 2;
+}

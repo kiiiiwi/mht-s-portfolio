@@ -191,21 +191,36 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "技能证书",
     skills: [
-      { name: "Illustrator", icon: "illustrator" },
-      { name: "Photoshop", icon: "photoshop" },
-      { name: "Figma", icon: "figma" },
-      { name: "Blender", icon: "blender" },
-      { name: "Python", icon: "python" },
-      { name: "HTML5", icon: "html5" },
-      { name: "CSS3", icon: "css3" },
-      { name: "MySQL", icon: "mysql" },
-      { name: "ArcGIS", icon: "arcgis" },
-      { name: "QGIS", icon: "qgis" },
-      { name: "Axure", icon: "axure" },
-      { name: "Matlab", icon: "matlab" },
-      { name: "CorelDraw", icon: "coreldraw" },
-      { name: "JavaScript", icon: "javascript" },
+      { name: "AI", icon: "illustrator", proficiency: 100 },
+      { name: "PS", icon: "photoshop", proficiency: 80 },
+      { name: "Figma", icon: "figma", proficiency: 80 },
+      { name: "Blender", icon: "blender", proficiency: 60 },
+      { name: "Python", icon: "python", proficiency: 80 },
+      { name: "H5", icon: "html5", proficiency: 65 },
+      { name: "C3", icon: "css3", proficiency: 65 },
+      { name: "Matlab", icon: "matlab", proficiency: 75 },
+      { name: "Arcgis", icon: "arcgis", proficiency: 100 },
+      { name: "Qgis", icon: "qgis", proficiency: 100 },
+      { name: "Axure", icon: "axure", proficiency: 80 },
+      { name: "SQL", icon: "mysql", proficiency: 70 },
+      { name: "Coreldraw", icon: "coreldraw", proficiency: 85 },
+      { name: "JavaScript", icon: "javascript", proficiency: 60 },
     ],
+    certificates: {
+      display: true,
+      title: "资格证书",
+      items: [
+        {
+          name: "IELTS 7.5",
+        },
+        {
+          name: "全国计算机等级考试二级 Python语言程序设计",
+        },
+        {
+          name: "教师资格证书 高中数学",
+        },
+      ],
+    },
   },
 };
 

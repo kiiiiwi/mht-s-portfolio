@@ -209,7 +209,21 @@ export interface About extends BasePageConfig {
       name: string;
       /** Skill icon */
       icon: string;
+      /** Skill proficiency level (0-100) */
+      proficiency: number;
     }>;
+    /** Certificates section */
+    certificates: {
+      /** Whether to display certificates section */
+      display: boolean;
+      /** Title for the certificates section */
+      title: string;
+      /** List of certificates */
+      items: Array<{
+        /** Certificate name */
+        name: string;
+      }>;
+    };
   };
 }
 
