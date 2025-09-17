@@ -3,14 +3,14 @@ import { Line, Row, Text } from "@once-ui-system/core";
 import { HeadlineEmoji } from "@/components/HeadlineEmoji";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Huitao",
+  lastName: "Ma",
+  name: `马慧韬`,
+  role: "产品经理/UX体验设计",
   avatar: "/images/mht.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "mhtyuan0912@163.com",
+  location: "中国/上海", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["中文", "English"], // optional: Leave the array empty if you don't want to display languag
 };
 
 const newsletter: Newsletter = {
@@ -23,22 +23,12 @@ const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
+    name: "Phone: +86 18865675275",
+    icon: "phone",
+    link: "tel:+8618865675275",
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
-  {
-    name: "Email",
+    name: "Email: mhtyuan0912@163.com",
     icon: "email",
     link: `mailto:${person.email}`,
   },
@@ -93,63 +83,53 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "基本信息",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        自我评价：拥有多学科融合的专业技能，具有良好的界面设计能力、逻辑思维能力、数据分析能力；具备良好的沟通和学习能力，为人诚恳，能较好的处理人际关系；
+        目标感、执行力强，情绪稳定（MBTI：ISTJ）；具有互联网思维，开放包容，富有创造力。
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "实习经验",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "上海市地听信息科技有限公司",
+        timeframe: "2025.7 - 2025.8",
+        role: "解决方案工程师",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            原型设计：主要工作为协助参与上海市“一张图”服务项目，包括遥感解译与地理信息处理、协助平板端AI功能显示界面原型设计制作等；
+            同时辅助生态服务环境治理项目报表制作，形成记录300余条。
           </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "澎湃新闻 澎湃美数课",
+        timeframe: "2024.10 - 2025.1",
+        role: "数据分析实习生",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            新闻数据可视化：主要负责新闻推送中数据处理分析与可视化，参与公众号推文五篇，涵盖海关普查、气候变化等内容；小红书发帖十余条，累积获得点赞评论数超2000条。
           </>,
         ],
-        images: [],
+      },
+      {
+        company: "上海市测绘院",
+        timeframe: "2024.8",
+        role: "测绘专业岗",
+        achievements: [
+          <>
+            主要工作包括基于天地图更新杨浦区、青浦区领导工作规划用图，图集《影像地图中示范区这五年》中交通网络和跨省公交专题的地图制作，以及上海中心城区创新园区示意图制作。
+          </>,
+        ],
       },
     ],
   },
