@@ -10,8 +10,9 @@ import {
   Schema,
   Meta,
   Line,
+  Icon,
 } from "@once-ui-system/core";
-import { home, about, person, baseURL, routes } from "@/resources";
+import { home, about, person, baseURL, routes, work } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
@@ -141,6 +142,26 @@ export default function Home() {
         </Column>
       )}
       <Projects range={[2]} />
+      <RevealFx translateY="16" delay={0.8} horizontal="center" paddingBottom="40">
+        <Button
+          id="work"
+          data-border="rounded"
+          href={work.path}
+          variant="secondary"
+          size="m"
+          weight="default"
+          arrowIcon
+        >
+          <Row gap="8" vertical="center" paddingRight="4">
+            <Icon
+              name="books"
+              size="m"
+              style={{ marginLeft: "-0.75rem", marginRight: "0.5rem" }}
+            />
+            see more - 更多作品
+          </Row>
+        </Button>
+      </RevealFx>
       <Mailchimp />
     </Column>
   );
