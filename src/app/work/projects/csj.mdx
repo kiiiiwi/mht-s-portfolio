@@ -9,9 +9,99 @@ images:
   - "/images/projects/project-02/image-03.jpg"
 ---
 
-## Overview
+## 项目概况
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+长三角区域一体化图集是国家社科基金重点项目的支撑性成果，荣获英国制图学会（BCS）专题制图优秀成果奖。本项目通过系统性的数据收集、处理与可视化，全面展现长三角地区环境污染现状和区域一体化发展特征。
+
+## 图集内容展示
+
+<Column gap="32" marginBottom="40">
+  <Grid columns="2" gap="32" s={{ columns: "1" }}>
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-02/image-01.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
+    >
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-02/image-01.jpg" 
+          alt="长三角水污染分布图" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-m">长三角水污染分布图</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            系统分析长三角地区主要水体污染状况，展现区域水环境质量空间分布特征和污染源分布规律。
+          </Text>
+        </Column>
+      </Column>
+    </Card>
+
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-02/image-02.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
+    >
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-02/image-02.jpg" 
+          alt="长三角大气污染监测图" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-m">长三角大气污染监测图</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            基于多源监测数据，展现长三角地区PM2.5、臭氧等主要大气污染物的时空分布特征和变化趋势。
+          </Text>
+        </Column>
+      </Column>
+    </Card>
+
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-02/image-03.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
+    >
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-02/image-03.jpg" 
+          alt="长三角地面沉降监测图" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-m">长三角地面沉降监测图</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            利用InSAR技术监测长三角地区地面沉降现状，分析沉降成因和空间分布规律，为区域可持续发展提供科学依据。
+          </Text>
+        </Column>
+      </Column>
+    </Card>
+  </Grid>
+</Column>
 
 ## Key Features
 

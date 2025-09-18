@@ -32,7 +32,7 @@ const display: DisplayConfig = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes: ProtectedRoutesConfig = {
-  "/work/fuzhou": true,
+  // No protected routes currently
 };
 
 // Import and set font for each variant
