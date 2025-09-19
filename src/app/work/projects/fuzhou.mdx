@@ -1,7 +1,7 @@
 ---
 title: "福州海洋经济图集"
 publishedAt: "2024-04-01"
-summary: "参与图集部分图件的绘制，体现触良好的数据处理和可视化能力"
+summary: "参与图集部分图件的绘制，体现出良好的数据处理和可视化能力"
 images:
   - "/images/projects/project-03/cover.jpg"
   - "/images/projects/project-03/image-01.jpg"
@@ -11,178 +11,174 @@ images:
   - "/images/projects/project-03/image-05.jpg"
 ---
 
+import { ImageViewer } from "@/components";
+
 ## 项目概况
 
-福州海洋经济图集项目专注于展现福州市海洋经济发展现状和空间布局特征。通过系统的数据收集、处理与可视化技术，全面反映福州市海洋产业发展水平、海洋资源分布以及海洋生态环境状况，为海洋经济可持续发展提供科学支撑。
+福州海洋经济图集项目专注于宣传和展示福州市海洋经济现状及产业发展成果，解读海洋经济发展的未来蓝图，让更加广泛的受众可以关心海洋、认识海洋、经略海洋。
 
 ## 图集内容展示
 
+<Text variant="body-default-xs" onBackground="neutral-weak" style={{ color: "#666", fontSize: "12px", marginBottom: "16px", textAlign: "left" }}>
+  相关内容解释权归版权方所有，页面仅展示视觉效果，不代表本人任何政治倾向和信仰，未经允许不可下载转发。
+</Text>
+
 <Column gap="32" marginBottom="40">
   <Grid columns="2" gap="32" s={{ columns: "1" }}>
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-03/image-01.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-03/image-01.jpg"
+      alt="海洋科创研发"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-03/image-01.jpg" 
-          alt="福州海洋产业分布图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">福州海洋产业分布图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            系统展现福州市海洋渔业、海洋运输、滨海旅游等主要海洋产业的空间分布格局和发展现状。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-03/image-01.jpg" 
+            alt="海洋科创研发" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-s">海洋科创研发</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              系统展现福州市基于海洋的创新产业的空间分布格局和发展现状，包括海洋产业园区规划和海洋科技创新布局。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
 
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-03/image-02.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-03/image-02.jpg"
+      alt="海洋人才引育"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-03/image-02.jpg" 
-          alt="福州港口经济发展图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">福州港口经济发展图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            分析福州港及周边港口的货物吞吐量、航线分布和经济辐射范围，展现港口经济发展水平。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-03/image-02.jpg" 
+            alt="海洋人才引育" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-s">海洋人才引育</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              分析福州关于“海洋人才”的相关政策，展现福州对“海洋人才”的重视与独特亮点。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
 
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-03/image-03.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-03/image-03.jpg"
+      alt="海洋电力业"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-03/image-03.jpg" 
-          alt="福州海洋资源分布图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">福州海洋资源分布图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            标注福州近海海洋生物资源、矿产资源和可再生能源的分布情况，评估资源开发潜力。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-03/image-03.jpg" 
+            alt="海洋电力业" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-s">海洋电力业</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              展现福州海洋电力的相关布局和绿色发展理念。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
 
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-03/image-04.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-03/image-04.jpg"
+      alt="经略商政：海商与船政"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-03/image-04.jpg" 
-          alt="福州海洋生态环境图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">福州海洋生态环境图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            监测福州近海水质状况、海洋生物多样性和生态系统健康状况，为海洋环境保护提供依据。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-03/image-04.jpg" 
+            alt="经略商政：海商与船政" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-s">经略商政：海商与船政</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              展现福州源远流长的海商特色与船政文化。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
 
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-03/image-05.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-03/image-05.jpg"
+      alt="沟通心灵：民间与官方"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-03/image-05.jpg" 
-          alt="福州海洋经济发展规划图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">福州海洋经济发展规划图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            展望福州海洋经济未来发展方向，包括海洋产业园区规划和海洋科技创新布局。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-03/image-05.jpg" 
+            alt="沟通心灵：民间与官方" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-s">沟通心灵：民间与官方</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              展现福州特色的妈祖文化和世界友好的开放情怀。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
   </Grid>
 </Column>
 
-## Key Features
-
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
-
-## Technologies Used
-
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
-
-## Challenges and Learnings
-
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
-
-## Outcome
-
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
-
----
-
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.

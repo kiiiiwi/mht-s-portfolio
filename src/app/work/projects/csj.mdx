@@ -9,118 +9,112 @@ images:
   - "/images/projects/project-02/image-03.jpg"
 ---
 
+import { ImageViewer } from "@/components";
+
 ## 项目概况
 
-长三角区域一体化图集是国家社科基金重点项目的支撑性成果，荣获英国制图学会（BCS）专题制图优秀成果奖。本项目通过系统性的数据收集、处理与可视化，全面展现长三角地区环境污染现状和区域一体化发展特征。
+长三角区域一体化图集充分利用现代地理信息技术手段以及定性与定量分析相结合的方法，借助多元信息图表、图文互注呈现等方式，论述长三角一体化时空特征，阐述“一体化空间”地理认知新观点。
 
 ## 图集内容展示
 
+<Text variant="body-default-xs" onBackground="neutral-weak" style={{ color: "#666", fontSize: "12px", marginBottom: "16px", textAlign: "left" }}>
+  相关内容解释权归版权方所有，页面仅展示视觉效果，不代表本人任何政治倾向和信仰，未经允许不可下载转发。
+</Text>
+
 <Column gap="32" marginBottom="40">
   <Grid columns="2" gap="32" s={{ columns: "1" }}>
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-02/image-01.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-02/image-01.jpg"
+      alt="行政区划干扰的区域水网"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-02/image-01.jpg" 
-          alt="长三角水污染分布图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">长三角水污染分布图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            系统分析长三角地区主要水体污染状况，展现区域水环境质量空间分布特征和污染源分布规律。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-02/image-01.jpg" 
+            alt="行政区划干扰的区域水网" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-xs">行政区划干扰的区域水网</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              系统分析长三角行政边界区域主要水污染状况，展现区域水环境质量空间分布特征和污染源分布规律，展示相关流域治理经验。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
 
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-02/image-02.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-02/image-02.jpg"
+      alt="内外共同作用的区域大气环境"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-02/image-02.jpg" 
-          alt="长三角大气污染监测图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">长三角大气污染监测图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            基于多源监测数据，展现长三角地区PM2.5、臭氧等主要大气污染物的时空分布特征和变化趋势。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-02/image-02.jpg" 
+            alt="内外共同作用的区域大气环境" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-xs">内外共同作用的区域大气环境</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              基于多源监测数据，展现长三角地区PM2.5、PM10等主要大气污染物区域与全国性的时空分布特征和变化趋势。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
 
-    <Card 
-      padding="20" 
-      radius="l" 
-      border="neutral-alpha-weak" 
-      fillWidth
-      href="/images/projects/project-02/image-03.jpg"
-      target="_blank"
-      style={{ 
-        cursor: "pointer",
-        transition: "all 0.2s ease"
-      }}
+    <ImageViewer 
+      src="/images/projects/project-02/image-03.jpg"
+      alt="地面沉降与海平面上升的高风险区"
     >
-      <Column gap="16">
-        <Media 
-          src="/images/projects/project-02/image-03.jpg" 
-          alt="长三角地面沉降监测图" 
-          radius="m" 
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-        <Column gap="8" paddingX="4">
-          <Text variant="heading-strong-m">长三角地面沉降监测图</Text>
-          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            利用InSAR技术监测长三角地区地面沉降现状，分析沉降成因和空间分布规律，为区域可持续发展提供科学依据。
-          </Text>
+      <Card 
+        padding="20" 
+        radius="l" 
+        border="neutral-alpha-weak" 
+        fillWidth
+        style={{ 
+          cursor: "pointer",
+          transition: "all 0.2s ease"
+        }}
+      >
+        <Column gap="16">
+          <Media 
+            src="/images/projects/project-02/image-03.jpg" 
+            alt="地面沉降与海平面上升的高风险区" 
+            radius="m" 
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <Column gap="8" paddingX="4">
+            <Text variant="heading-strong-xs">地面沉降与海平面上升的高风险区</Text>
+            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+              展现长三角地区地面沉降现状，分析沉降时空变化规律，为区域可持续发展提供科学依据。
+            </Text>
+          </Column>
         </Column>
-      </Column>
-    </Card>
+      </Card>
+    </ImageViewer>
   </Grid>
 </Column>
 
-## Key Features
-
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
-
-## Technologies Used
-
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
-
-## Challenges and Learnings
-
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
-
-## Outcome
-
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.

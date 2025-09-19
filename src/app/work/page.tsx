@@ -48,7 +48,7 @@ export default function Work() {
               size="m"
               style={{ marginLeft: "-0.75rem", marginRight: "0.5rem" }}
             />
-            see gallery - 查看相册
+            see more in gallery - 更多作品
           </Row>
         </Button>
       </RevealFx>
