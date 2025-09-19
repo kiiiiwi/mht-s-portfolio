@@ -1,7 +1,8 @@
 "use client";
 
-import { Media, Grid, Column } from "@once-ui-system/core";
+import { Media, Grid, Column, Row } from "@once-ui-system/core";
 import { gallery } from "@/resources";
+import { PortfolioDownloadButton } from "@/components";
 
 export default function GalleryView() {
   return (
@@ -51,6 +52,16 @@ export default function GalleryView() {
             />
           ))}
       </Grid>
+
+      {/* 下载作品集按钮 - 居中显示 */}
+      <Row
+        horizontal="center"
+        paddingTop="40"
+        paddingBottom="40"
+        fillWidth
+      >
+        <PortfolioDownloadButton />
+      </Row>
     </Column>
   );
 }

@@ -14,6 +14,7 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import { ResumeDownloadButton } from "@/components";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -117,6 +118,7 @@ export default function About() {
                 ))}
               </Row>
             )}
+            <ResumeDownloadButton />
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
