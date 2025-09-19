@@ -11,8 +11,6 @@ images:
   - "/images/projects/project-03/image-05.jpg"
 ---
 
-import { ImageViewer } from "@/components";
-
 ## 项目概况
 
 福州海洋经济图集项目专注于宣传和展示福州市海洋经济现状及产业发展成果，解读海洋经济发展的未来蓝图，让更加广泛的受众可以关心海洋、认识海洋、经略海洋。
@@ -25,160 +23,145 @@ import { ImageViewer } from "@/components";
 
 <Column gap="32" marginBottom="40">
   <Grid columns="2" gap="32" s={{ columns: "1" }}>
-    <ImageViewer 
-      src="/images/projects/project-03/image-01.jpg"
-      alt="海洋科创研发"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-03/image-01.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-03/image-01.jpg" 
-            alt="海洋科创研发" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">海洋科创研发</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              系统展现福州市基于海洋的创新产业的空间分布格局和发展现状，包括海洋产业园区规划和海洋科技创新布局。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-03/image-01.jpg" 
+          alt="海洋科创研发" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">海洋科创研发</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            系统展现福州市基于海洋的创新产业的空间分布格局和发展现状，包括海洋产业园区规划和海洋科技创新布局。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-03/image-02.jpg"
-      alt="海洋人才引育"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-03/image-02.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-03/image-02.jpg" 
-            alt="海洋人才引育" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">海洋人才引育</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              分析福州关于“海洋人才”的相关政策，展现福州对“海洋人才”的重视与独特亮点。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-03/image-02.jpg" 
+          alt="海洋人才引育" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">海洋人才引育</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            分析福州关于“海洋人才”的相关政策，展现福州对“海洋人才”的重视与独特亮点。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-03/image-03.jpg"
-      alt="海洋电力业"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-03/image-03.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-03/image-03.jpg" 
-            alt="海洋电力业" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">海洋电力业</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              展现福州海洋电力的相关布局和绿色发展理念。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-03/image-03.jpg" 
+          alt="海洋电力业" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">海洋电力业</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            展现福州海洋电力的相关布局和绿色发展理念。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-03/image-04.jpg"
-      alt="经略商政：海商与船政"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-03/image-04.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-03/image-04.jpg" 
-            alt="经略商政：海商与船政" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">经略商政：海商与船政</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              展现福州源远流长的海商特色与船政文化。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-03/image-04.jpg" 
+          alt="经略商政：海商与船政" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">经略商政：海商与船政</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            展现福州源远流长的海商特色与船政文化。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-03/image-05.jpg"
-      alt="沟通心灵：民间与官方"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-03/image-05.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-03/image-05.jpg" 
-            alt="沟通心灵：民间与官方" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">沟通心灵：民间与官方</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              展现福州特色的妈祖文化和世界友好的开放情怀。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-03/image-05.jpg" 
+          alt="沟通心灵：民间与官方" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">沟通心灵：民间与官方</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            展现福州特色的妈祖文化和世界友好的开放情怀。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
   </Grid>
 </Column>
 

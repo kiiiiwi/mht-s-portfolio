@@ -9,8 +9,6 @@ images:
   - "/images/projects/project-01/image-04.jpg"
 ---
 
-import { ImageViewer } from "@/components";
-
 ## 项目概况
 
 我们希望通过这本图集为国内首部面向教育科普的新形态全月综合专题地图集，旨在通过多模态表达与信息融合设计，为月球科普教育提供全新的视觉体验和知识传播方式。
@@ -23,85 +21,77 @@ import { ImageViewer } from "@/components";
 
 <Column gap="32" marginBottom="40">
   <Grid columns="2" gap="32" s={{ columns: "1" }}>
-    <ImageViewer 
-      src="/images/projects/project-01/image-01.jpg"
-      alt="月球的外观"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-01.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-01.jpg" 
-            alt="月球的外观" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">月球的外观</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              展示月球表面的外观特色及与其他行星的对比。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-01.jpg" 
+          alt="月球的外观" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">月球的外观</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            展示月球表面的外观特色及与其他行星的对比。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-02.jpg"
-      alt="月壤与月尘环境"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-02.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-02.jpg" 
-            alt="月壤与月尘环境" 
-            radius="m" 
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <Column gap="8" paddingX="4">
-            <Text variant="heading-strong-s">月壤与月尘环境</Text>
-            <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-              详细描绘月球表面的月尘环境与月壤厚度。
-            </Text>
-          </Column>
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-02.jpg" 
+          alt="月壤与月尘环境" 
+          radius="m" 
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <Column gap="8" paddingX="4">
+          <Text variant="heading-strong-s">月壤与月尘环境</Text>
+          <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
+            详细描绘月球表面的月尘环境与月壤厚度。
+          </Text>
         </Column>
-      </Card>
-    </ImageViewer>
+      </Column>
+    </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-03.jpg"
-      alt="月壤"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-03.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-03.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-03.jpg" 
           alt="月壤" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -114,25 +104,22 @@ import { ImageViewer } from "@/components";
         </Column>
       </Column>
     </Card>
-    </ImageViewer>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-04.jpg"
-      alt="月球化学元素"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-04.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-04.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-04.jpg" 
           alt="月球化学元素" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -140,30 +127,27 @@ import { ImageViewer } from "@/components";
         <Column gap="8" paddingX="4">
           <Text variant="heading-strong-s">月球化学元素</Text>
           <Text variant="body-default-s" onBackground="neutral-weak" style={{ lineHeight: "1.6" }}>
-            展示月球主要的化学元素分布与占比，及各元素在不同地区的含量对比
+            展示月球主要的化学元素分布与占比，及各元素在不同地区的含量对比。
           </Text>
         </Column>
       </Column>
     </Card>
-    </ImageViewer>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-05.jpg"
-      alt="人类观月史"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-05.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-05.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-05.jpg" 
           alt="人类观月史" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -176,25 +160,22 @@ import { ImageViewer } from "@/components";
         </Column>
       </Column>
     </Card>
-    </ImageViewer>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-06.jpg"
-      alt="人类探月史"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-06.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-15.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-15.jpg" 
           alt="人类探月史" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -208,23 +189,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-07.jpg"
-      alt="苏联的月球号计划"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-07.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-07.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-07.jpg" 
           alt="苏联的“月球号”计划" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -238,23 +217,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-08.jpg"
-      alt="美国的阿波罗计划"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-08.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-08.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-08.jpg" 
           alt="美国的“阿波罗”计划" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -268,23 +245,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-09.jpg"
-      alt="中国的嫦娥计划"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-09.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-09.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-09.jpg" 
           alt="中国的嫦娥计划" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -298,23 +273,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-10.jpg"
-      alt="美国的阿尔忒弥斯计划"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-10.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-10.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-10.jpg" 
           alt="美国的“阿尔忒弥斯”计划" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -328,23 +301,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-11.jpg"
-      alt="各国探月活动进程"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-11.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-11.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-11.jpg" 
           alt="各国探月活动进程" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -358,23 +329,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-12.jpg"
-      alt="月球基准测定方法"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-12.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-12.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-12.jpg" 
           alt="月球基准测定方法" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -388,23 +357,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer 
-      src="/images/projects/project-01/image-13.jpg"
-      alt="月球基准测定结果"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-13.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-13.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-13.jpg" 
           alt="月球基准测定结果" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -418,23 +385,21 @@ import { ImageViewer } from "@/components";
       </Column>
     </Card>
 
-    <ImageViewer
-      src="/images/projects/project-01/image-14.jpg"
-      alt="月球着陆区"
+    <Card 
+      padding="20" 
+      radius="l" 
+      border="neutral-alpha-weak" 
+      fillWidth
+      href="/images/projects/project-01/image-14.jpg"
+      target="_blank"
+      style={{ 
+        cursor: "pointer",
+        transition: "all 0.2s ease"
+      }}
     >
-      <Card 
-        padding="20" 
-        radius="l" 
-        border="neutral-alpha-weak" 
-        fillWidth
-        style={{ 
-          cursor: "pointer",
-          transition: "all 0.2s ease"
-        }}
-      >
-        <Column gap="16">
-          <Media 
-            src="/images/projects/project-01/image-14.jpg" 
+      <Column gap="16">
+        <Media 
+          src="/images/projects/project-01/image-14.jpg" 
           alt="月球着陆区" 
           radius="m" 
           sizes="(max-width: 768px) 100vw, 50vw"
