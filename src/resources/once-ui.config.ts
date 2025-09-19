@@ -199,7 +199,7 @@ const sameAs: SameAsConfig = {
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
-// social sharing configuration for blog posts
+// social sharing configuration for posts
 const socialSharing: SocialSharingConfig = {
   display: true,
   platforms: {
