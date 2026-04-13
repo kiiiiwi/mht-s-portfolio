@@ -177,6 +177,26 @@ function createHR() {
   );
 }
 
+function ProjectVideo({ src }: { src: string }) {
+  return (
+    <Column fillWidth marginTop="8" marginBottom="24">
+      <video
+        controls
+        playsInline
+        preload="metadata"
+        style={{
+          width: "100%",
+          maxHeight: "min(70vh, 720px)",
+          borderRadius: "var(--static-radius-m)",
+          border: "1px solid var(--neutral-alpha-medium)",
+        }}
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+    </Column>
+  );
+}
+
 const components = {
   p: createParagraph as any,
   h1: createHeading("h1") as any,
@@ -209,6 +229,7 @@ const components = {
   Icon,
   Media,
   SmartLink,
+  ProjectVideo,
 };
 
 type CustomMDXProps = MDXRemoteProps & {
